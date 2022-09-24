@@ -1,0 +1,6 @@
+#!ipxe
+echo iPXE Loading menu.cfg ...
+dhcp
+chain http://${dhcp-server}/pxe/menu.cfg
+
+
